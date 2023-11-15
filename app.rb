@@ -17,7 +17,7 @@ p table1.row(1)
 puts '------------------'
 
 # pristup kolonama tabele
-p table1["treca_kolona"]
+p table1["treca_kolona"].to_s
 puts '------------------'
 
 # pristup tacnom redu u koloni tabele
