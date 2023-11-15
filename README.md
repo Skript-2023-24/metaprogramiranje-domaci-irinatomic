@@ -1,2 +1,27 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fEPmcCYd)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12896581&assignment_repo_type=AssignmentRepo)
+
+## Homework 1 for Ruby
+
+1. (0.5 Poena) Biblioteka može da vrati dvodimenzioni niz sa vrednostima tabele
+2. (0.5 Poena) Moguće je pristupati redu preko t.row(1), i pristup njegovim elementima po sintaksi niza.
+3. (0.5 Poena) Mora biti implementiran Enumerable modul(each funkcija), gde se vraćaju sve ćelije unutar tabele, sa leva na desno.
+4. (0.5 Poena) Biblioteka treba da vodi računa o merge-ovanim poljima
+5. (1.0 Poena) [ ] sintaksa mora da bude obogaćena tako da je moguće pristupati određenim vrednostima.
+    1. Biblioteka vraća celu kolonu kada se napravi upit t[“Prva Kolona”]
+    2. Biblioteka omogućava pristup vrednostima unutar kolone po sledećoj sintaksi t[“Prva Kolona”][1] za pristup drugom elementu te kolone
+    3. Biblioteka omogućava podešavanje vrednosti unutar ćelije po sledećoj sintaksi t[“Prva Kolona”][1]= 2556
+6. (5.0 Poena) Biblioteka omogućava direktni pristup kolonama, preko istoimenih metoda.
+    1. t.prvaKolona, t.drugaKolona, t.trecaKolona
+    2. subtotal/Average neke kolone se može sračunati preko sledećih sintaksi t.prvaKolona.sum i t.prvaKolona.avg
+    3. Iz svake kolone može da se izvuče pojedinačni red na osnovu vrednosti jedne od ćelija. (smatraćemo da ta ćelija jedinstveno identifikuje taj red)Primer sintakse: t.indeks.rn2310, ovaj kod će vratiti red studenta čiji je indeks rn2310
+    4. Kolona mora da podržava funkcije kao što su map, select, reduce. Naprimer: t.prvaKolona.map { |cell| cell+=1 }
+7. (0.5 Poena) Biblioteka prepoznaje ukoliko postoji na bilo koji način ključna reč total ili subtotal unutar sheet-a, i ignoriše taj red
+8. (0.5 Poena) Moguće je sabiranje dve tabele, sve dok su im headeri isti. Npr t1+t2, gde svaka predstavlja, tabelu unutar jednog od worksheet-ova. Rezultat će vratiti novu tabelu gde su redovi (bez headera) t2 dodati unutar t1. (SQL UNION operacija)
+9. (0.5 Poena) Moguće je oduzimanje dve tabele, sve dok su im headeri isti. Npr t1-t2, gde svaka predstavlja reprezentaciju jednog od worksheet-ova. Rezultat će vratiti novu tabelu gde su svi redovi iz t2 uklonjeni iz t1, ukoliko su identični.
+10. (0.5 Poena) Biblioteka prepoznaje prazne redove, koji mogu biti ubačeni izgleda radi
+
+Not done (1.00 poena): <br>
+7   <br>
+10  - alias za row metodu
+
